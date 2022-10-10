@@ -1,0 +1,7 @@
+code
+if (v.navData.totalCount > 0) {
+                    var fullData = v.effectiveEntries.toJSON();
+                    var pageData = fullData.slice(v.navData.startIndex - 1, v.navData.endIndex);
+
+                    v.getCartItems(pageData);
+         }
